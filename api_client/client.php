@@ -50,7 +50,7 @@ class ApiClient {
             'app_secret' => self::APP_SECRET]
         ]);
 
-        if($res->getStatusCode()){
+        if($res->getStatusCode() != 200){
             throw new \RuntimeException("Unauthorized application credentials");
         }
 
