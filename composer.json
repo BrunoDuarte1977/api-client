@@ -1,5 +1,6 @@
 {
     "require": {
-        "euautomation/graphql-client": "^0.2.0"
+        "euautomation/graphql-client": "^0.2.0",
+        "guzzlehttp/guzzle": "^6.3"
     }
 }
