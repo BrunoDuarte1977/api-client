@@ -1,6 +1,10 @@
 {
     "require": {
-        "euautomation/graphql-client": "^0.2.0",
-        "guzzlehttp/guzzle": "^6.3"
+      "euautomation/graphql-client": "^0.2.0",
+      "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+      "mockery/mockery": "~1.0",
+      "phpunit/phpunit": "~6.0"
     }
 }
