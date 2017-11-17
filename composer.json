@@ -1,6 +1,37 @@
 {
-    "require": {
-        "euautomation/graphql-client": "^0.2.0",
-        "guzzlehttp/guzzle": "^6.3"
+  "config": {
+        "bin-dir": "bin"
+  },
+  "repositories": [
+    {
+        "type": "package",
+        "package": {
+            "name": "bcredi/graphql",
+            "version": "dev-master",
+            "source": {
+                "url": "git://github.com/BrunoDuarte1977/api-client.git",
+                "type": "git",
+                "reference": "master"
+            },
+            "autoload-dev": {
+                "psr-0" : {
+                    "\\BCredi\\Graphql\\" : "tests/"
+                }
+            },
+            "autoload": {
+                "psr-0" : {
+                    "\\BCredi\\Graphql\\" : "src/"
+                }
+            }
+        }
+    }
+  ],
+  "require": {
+      "euautomation/graphql-client": "^0.2.0",
+      "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+      "mockery/mockery": "~1.0",
+      "phpunit/phpunit": "~6.0"
     }
 }
