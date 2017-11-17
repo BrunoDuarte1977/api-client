@@ -1,9 +1,10 @@
 <?php
 
-namespace BCredi;
+namespace BCredi\Graphql;
 
 class Auth {
   const ENDPOINT = "/apps/auth";
+
   private $app_id;
   private $app_secret;
   private $client;
@@ -14,15 +15,11 @@ class Auth {
     $this->app_secret = $app_secret;
   }
 
-  /**
-	* Make a request for API endpoint asking for new token
-	* @return string $token
-	*/
- 	public function getToken(){
+  public function getToken(){
     $response = $this->requestToken($this->client);
 
     return $response['data']['token'];
-	}
+  }
 
   private function requestToken(\GuzzleHttp\Client $client){
     $res = $client->request('POST', self::ENDPOINT, [

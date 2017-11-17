@@ -1,8 +1,6 @@
 <?php
 
 require '../vendor/autoload.php';
-require '../src/auth.php';
-require '../src/client.php';
 
 $endpoint = "http://api.bcredi-stag.ateliware.com/";
 $graphql_endpoint = "http://api.bcredi-stag.ateliware.com/graphql";
