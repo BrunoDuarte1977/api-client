@@ -18,7 +18,7 @@ class Auth {
   public function getToken(){
     $response = $this->requestToken($this->client);
 
-    return $response['data']['token'];
+    return $response->data->token;
   }
 
   private function requestToken(\GuzzleHttp\Client $client){
@@ -35,6 +35,6 @@ class Auth {
       throw new \RuntimeException("Unauthorized application credentials");
     }
 
-    return $res->getBody();
+    return json_decode($res->getBody());
   }
 }

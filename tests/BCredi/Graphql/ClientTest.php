@@ -1,6 +1,7 @@
 <?php
 
-namespace BCredi\Graphql;
+require_once(__DIR__ . '/../../../src/BCredi/Graphql/Client.php');
+require_once(__DIR__ . '/../../../src/BCredi/Graphql/Auth.php');
 
 use \PHPUnit\Framework\TestCase;
 
@@ -14,7 +15,7 @@ class ClientTest extends TestCase {
     $mock->shouldReceive([
       'json' => new \EUAutomation\GraphQL\Response($data)
     ]);
-    $client = new Client($mock, "valid_token");
+    $client = new \BCredi\Graphql\Client($mock, "valid_token");
 
     $this->assertEquals($client->execute("query"), $data);
   }

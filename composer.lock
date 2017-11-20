@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "65537fcaef697a7a387252c00e4d4fd8",
+    "content-hash": "49ce52444215b2599092d85fa83dba9c",
     "packages": [
         {
             "name": "euautomation/graphql-client",

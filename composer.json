@@ -13,15 +13,8 @@
                 "type": "git",
                 "reference": "master"
             },
-            "autoload-dev": {
-                "psr-0" : {
-                    "\\BCredi\\Graphql\\" : "tests/"
-                }
-            },
             "autoload": {
-                "psr-0" : {
-                    "\\BCredi\\Graphql\\" : "src/"
-                }
+                "psr-0" : {"": "src/BCredi"}
             }
         }
     }
